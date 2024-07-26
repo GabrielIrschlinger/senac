@@ -1,0 +1,85 @@
+#card_atividade{
+    width: 86vw;
+    margin:1vw 0.5vw;
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: 20vw 20vw 20vw 20vw;
+}
+.card{
+    width: 30vw;
+    height: 10vw;
+    background-color: white;
+    box-shadow: 0.1vw 0.2vw 0.3vw rgba(35, 35, 35, 0.5);
+    border-radius: 1.5vw;
+    overflow: hidden;
+    margin: 1vw 0;
+
+    transition: all 0.2s ease-in-out;
+    transform-origin: center;
+}
+
+.card div{
+    height: 25vw;
+    width: 15vw;
+    padding: 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    transition: all 0.2s ease-in-out;
+}
+.card img{
+    height: 6vw;
+    transition: all 0.2s ease-in-out;
+}
+.card h3{
+    font-family: 'fontp';
+    font-size: 2vw;
+    margin: 0;
+}
+.card p{
+    text-align: center;
+    font-family: 'fontp';
+    font-size: 0.8vw;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+.card:hover div{
+    height: 16vw;
+}
+@font-face {
+    font-family:'fontp';
+    src: url(/assets/font/font_principal.ttf);
+}
+h1{
+    font-family: fontP;
+    color: white;
+}
+#input_nome{
+    width: 15vw;
+    height: 2vw;
+    background-color: gainsboro;
+
+}
+#input_descricao{
+    width: 40vw;
+    height: 7vw;
+    background-color: gainsboro;
+
+}
+#btn_criar_card{
+    width: 8vw;
+    height: 4vw;
+    background-color: rgb(52, 52, 128);
+    color: white;
+    font-family: fontp;
+    border: none;
+    border-radius: 0.5vw;
+}
+body{
+    background-color: rgb(3, 1, 34);
+}
+
